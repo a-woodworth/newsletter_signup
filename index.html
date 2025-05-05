@@ -12,6 +12,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -24,8 +25,10 @@
         <h1 class="sr-only">XYZ Company - Newsletter Sign-up</h1>
         <picture class="newsletter__image">
           <source
-            media="(min-width: 56.5rem)"
             srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 56.5rem)"
+            width="400"
+            height="593"
           />
           <img
             src="assets/images/illustration-sign-up-mobile.svg"
@@ -57,7 +60,7 @@
             <div class="field">
               <label for="email" class="field__label">
                 <span>Email address</span>
-                <span class="error-message" id="email-error">
+                <span class="error-message" id="email-error" hidden>
                   Valid email required
                 </span>
               </label>
@@ -69,6 +72,7 @@
                 maxlength="64"
                 placeholder="email@company.com"
                 aria-describedby="email-error"
+                aria-invalid="false"
                 required
               />
             </div>

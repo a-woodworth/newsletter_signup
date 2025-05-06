@@ -21,72 +21,79 @@
 
   <body>
     <main>
-      <div class="wrapper">
-        <h1 class="sr-only">XYZ Company - Newsletter Sign-up</h1>
-        <picture class="newsletter__image">
-          <source
-            srcset="assets/images/illustration-sign-up-desktop.svg"
-            media="(min-width: 56.5rem)"
-            width="400"
-            height="593"
-          />
-          <img
-            src="assets/images/illustration-sign-up-mobile.svg"
-            alt=""
-          />
-        </picture>
+      <div class="signup">
         <!-- Sign-up form start -->
-        <div class="newsletter">
-          <h2 class="newsletter__heading">Stay updated!</h2>
-          <p class="newsletter__message">
-            Join 60,000+ product managers receiving monthly updates
-            on:
-          </p>
-          <ul class="newsletter-list">
-            <li class="newsletter-list__item">
-              Product discovery and building what matters
-            </li>
-            <li class="newsletter-list__item">
-              Measuring to ensure updates are a success
-            </li>
-            <li class="newsletter-list__item">And much more!</li>
-          </ul>
-          <form
-            action="#"
-            method="post"
-            class="newsletter__form"
-            novalidate
-          >
-            <div class="field">
-              <label for="email" class="field__label">
-                <span>Email address</span>
-                <span class="error-message" id="email-error" hidden>
-                  Valid email required
-                </span>
-              </label>
-              <input
-                class="field__input"
-                id="email"
-                name="email"
-                type="email"
-                maxlength="64"
-                placeholder="email@company.com"
-                aria-describedby="email-error"
-                aria-invalid="false"
-                required
-              />
-            </div>
-            <button class="btn" type="submit">
-              Subscribe to monthly newsletter
-            </button>
-          </form>
+        <div class="wrapper">
+          <h1 class="sr-only">XYZ Company - Newsletter Sign-up</h1>
+          <picture class="newsletter__image">
+            <source
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+              media="(min-width: 56.5rem)"
+              width="400"
+              height="593"
+            />
+            <img
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt=""
+            />
+          </picture>
+          <div class="newsletter">
+            <h2 class="newsletter__heading">Stay updated!</h2>
+            <p class="newsletter__message">
+              Join 60,000+ product managers receiving monthly updates
+              on:
+            </p>
+            <ul class="newsletter-list">
+              <li class="newsletter-list__item">
+                Product discovery and building what matters
+              </li>
+              <li class="newsletter-list__item">
+                Measuring to ensure updates are a success
+              </li>
+              <li class="newsletter-list__item">And much more!</li>
+            </ul>
+            <form
+              action="#"
+              method="post"
+              class="newsletter__form"
+              novalidate
+            >
+              <div class="field">
+                <label for="email" class="field__label">
+                  <span>Email address</span>
+                  <span class="error-message" id="email-error" hidden>
+                    Valid email required
+                  </span>
+                </label>
+                <input
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="64"
+                  placeholder="email@company.com"
+                  aria-describedby="email-error"
+                  aria-invalid="false"
+                  required
+                />
+              </div>
+              <button class="btn" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
         </div>
         <!-- Sign-up form end -->
       </div>
       <!-- Success message start -->
-      <div class="wrapper--success" hidden>
+      <div class="wrapper--success hidden">
         <div class="success">
-          <img src="assets/images/icon-success.svg" alt="" />
+          <img
+            src="assets/images/icon-success.svg"
+            alt=""
+            width="64"
+            height="64"
+          />
           <h2 class="success__heading">Thanks for subscribing!</h2>
           <p class="success__message">
             A confirmation email has been sent to

@@ -221,7 +221,7 @@ h2 {
 }
 
 .error-message {
-  color: var(--red);
+  color: var(--error-text);
 }
 
 .newsletter__form input {

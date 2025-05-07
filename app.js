@@ -43,6 +43,12 @@ function validateForm(e) {
     showEmailError();
     emailInput.focus();
   } else {
+    // Email input is valid, proceed with form submission
+    // For demo, just logging the email
+    const formData = new FormData(signupForm);
+    const email = formData.get('email');
+    console.log('Form submitted with email:', email);
+
     // Show success message
     signupDiv.classList.add('hidden');
     successEmail.textContent = emailInput.value;

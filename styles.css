@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -166,7 +166,8 @@ h2 {
   margin-block-start: auto;
 }
 
-.success .btn:hover {
+.success .btn:hover,
+.success .btn:focus {
   box-shadow: var(--shadow);
 }
 
@@ -250,7 +251,8 @@ h2 {
   width: 100%;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background: var(--gradient);
   color: var(--blue-800);
 }

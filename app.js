@@ -12,8 +12,9 @@ function handleSuccessMessageExit() {
   // Show signup form & reset form
   signupDiv.classList.remove('hidden');
   signupForm.reset();
-  // Add aria atribute to h1 so screen readers know page has changed
-  signupDiv.querySelector('h1').setAttribute('aria-live', 'polite');
+  // Add atribute so screen readers know page has changed
+  signupDiv.setAttribute('tabindex', '-1');
+  signupDiv.focus();
 }
 
 function removeEmailError() {

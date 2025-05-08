@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message----accessibility-javascript-V_7eIhEaHX)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/newsletter_signup)
 
 ### Built with

@@ -12,7 +12,7 @@ function handleSuccessMessageExit() {
   // Show signup form & reset form
   signupDiv.classList.remove('hidden');
   signupForm.reset();
-  // Add atribute so screen readers know page has changed
+  // Add attribute so screen readers know page has changed
   signupDiv.setAttribute('tabindex', '-1');
   signupDiv.focus();
 }
